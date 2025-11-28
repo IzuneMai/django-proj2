@@ -1,26 +1,66 @@
 body{
-    background: #4d4c57;
+    background: #2c2c2c;
 }
 
 aside{
     float: left;
-    background: #403f47;
+    background: #181818;
     width: 20%;
     padding: 2.5%;
     height: 100vh;
     color: #fff;
-    border-right: 5px solid #36363d;
+    border-right: 5px solid #4d4d4d;
 }
 
 aside img{
+    width:90px;
     float:left;
 }
 
 aside .logo{
-    float:right;
-    font-size: 30px;
+    font-size:31px;
     margin-left: 10px;
     font-weight: bold;
     position: relative;
-    top:-5px;
+    top:20px;
+}
+
+aside h3{
+    margin-top:50px;
+    font-size:28px;
+}
+
+aside ul{list-style:none}
+aside ul li {
+    display: block;
+    margin-top:20px;
+    transition: transform .4s ease;
+}
+
+aside a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+aside ul li:hover, aside a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.features {
+    float:left;
+    color: #fff;
+    margin-top:100px;
+    text-align: center;
+    width: 75%;
+}
+
+.features h1 {font-size:50px;}
+.features p {
+    max-width: 400px;
+    margin:20px auto;
+    word-wrap: break-word;
+    text-align: center;
 }
