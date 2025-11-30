@@ -2,59 +2,79 @@ body{
     background: #2c2c2c;
 }
 
-aside{
-    float: left;
+nav{
     background: #181818;
-    width: 20%;
-    padding: 2.5%;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     color: #fff;
-    border-right: 5px solid #4d4d4d;
+    border-bottom: 3px solid #ea5a44;
 }
 
-aside img{
+nav img{
     width:90px;
-    float:left;
+    transform: scale(1.0);
 }
 
-aside .logo{
+nav .logo{
     font-size:31px;
-    margin-left: 10px;
+    margin-left: 5px;
     font-weight: bold;
     position: relative;
     top:20px;
 }
 
-aside h3{
-    margin-top:50px;
-    font-size:28px;
-}
-
-aside ul{list-style:none}
-aside ul li {
+nav ul{list-style:none;}
+nav ul li {
     display: block;
-    margin-top:20px;
+    margin-top:35px;
+    font-size: 20px;
+    margin-right: 15px;
     transition: transform .4s ease;
 }
 
-aside a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-aside ul li:hover, aside a:hover {
-    color: #eb5959;
+#active:hover{
+    color: #ea5a44;
     text-decoration: none;
     transform: scale(1.05);
+    transition: transform .4s ease;
+}
+
+nav ul li:hover, nav a:hover {
+    color: #ea5a44;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: transform .4s ease;
+}
+
+.navbar-toggler{
+    margin-top: 20px;
+    color: #ea5a44;
+    justify-content: right;
+}
+
+@media (max-width:360px) {
+    nav img{
+    width:75px;
+    transform: scale(1.0);
+    
+    }
+
+    nav .logo{
+        font-size:29px;
+        margin-left: 5px;
+        font-weight: bold;
+        position: relative;
+        top:20px;
+    }
+
 }
 
 .features {
-    float:left;
     color: #fff;
     margin-top:100px;
     text-align: center;
-    width: 75%;
+    width: 100%;
+    position: relative;
 }
 
 .features h1 {font-size:50px;}
