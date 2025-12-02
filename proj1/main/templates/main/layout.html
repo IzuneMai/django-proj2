@@ -41,17 +41,14 @@
                 </ul>
             </div>
         </div>
-
         <form action="/search" method="get" class="search-form">
             <div class="search-container">
                 <input type="text" name="q" placeholder="Поиск..." value="{{ query }}" class="search-input">
             </div>
             <button type="submit" class="search-button">Найти</button>
         </form>
-
     </nav>
-
-
+    
     <mian>
         {% block content %}
         {% endblock %}
