@@ -35,10 +35,22 @@
                     <li class="nav-item">
                         <a class="nav-link" id="active" href="{% url 'profile' %}">Профиль</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="active" href="{% url 'guides' %}">Гайды</a>
+                    </li>
                 </ul>
             </div>
         </div>
+
+        <form action="/search" method="get" class="search-form">
+            <div class="search-container">
+                <input type="text" name="q" placeholder="Поиск..." value="{{ query }}" class="search-input">
+            </div>
+            <button type="submit" class="search-button">Найти</button>
+        </form>
+
     </nav>
+
 
     <mian>
         {% block content %}

@@ -10,3 +10,6 @@ def index(request):
 
 def profile(request):
     return render(request, 'main/profile.html')
+
+def guides(request):
+    return render(request, 'main/guides.html')
