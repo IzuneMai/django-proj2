@@ -1,6 +1,6 @@
 /* header */
 
-nav{
+.naviganiton{
     background: #181818;
     width: 100%;
     height: auto;
@@ -9,12 +9,13 @@ nav{
     justify-content: space-between;
 }
 
-nav img{
+.logo_img{
     width:90px;
     transform: scale(1.0);
 }
 
-nav .logo{
+.logo{
+    
     font-size:31px;
     margin-left: 5px;
     font-weight: bold;
@@ -22,8 +23,8 @@ nav .logo{
     top:20px;
 }
 
-nav ul{list-style:none;}
-nav ul li {
+.naviganiton ul{list-style:none;}
+.naviganiton ul li {
     display: block;
     margin-top:35px;
     font-size: 20px;
@@ -31,14 +32,14 @@ nav ul li {
     transition: transform .4s ease;
 }
 
-#active:hover{
+.active-link:hover{
     color: #ea5a44;
     text-decoration: none;
     transform: scale(1.05);
     transition: transform .4s ease;
 }
 
-nav ul li:hover, nav a:hover {
+.naviganiton ul li:hover, nav a:hover {
     color: #ea5a44;
     text-decoration: none;
     transform: scale(1.05);
@@ -52,13 +53,13 @@ nav ul li:hover, nav a:hover {
 }
 
 @media (max-width:360px) {
-    nav img{
+    .naviganiton img{
     width:75px;
     transform: scale(1.0);
     
     }
 
-    nav .logo{
+    .naviganiton .logo{
         font-size:29px;
         margin-left: 5px;
         font-weight: bold;
