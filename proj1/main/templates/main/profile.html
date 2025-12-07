@@ -4,10 +4,18 @@
 {% block title %}Профиль{% endblock %}
 
 {% block content %}
-    <div class="content-page">
+<div class="content-page">
+    <section>
         <div class="user_card">
-            <img class ='user_img' src="{% static 'main/img/masya.jpg' %}" alt="masya">
+            <img class='user_img' src="{% static 'main/img/masya.jpg' %}" alt="masya">
         </div>
-    </div>
-{% endblock %}
+    </section>
 
+    <section>
+        <div class="user_rev">
+            <h2>Ваши статьи</h2>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
