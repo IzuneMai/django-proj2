@@ -1,7 +1,9 @@
 venv/
 **/__pycache__/
+__pycache__/
+*.pyc
 .vdcode
 .idea
 .env
 
-proj1/db.sqlite3
+proj1/main.db
