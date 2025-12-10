@@ -4,6 +4,6 @@ cur = con.cursor()
 
 #таблица пользователей
 
-cur.execute(f'CREATE TABLE users ("id" INTEGER, "username" VARCHAR(30) UNIQUE, "password" VARCHAR(30),"email" VARCHAR(30), PRIMARY KEY("id" AUTOINCREMENT))')
+cur.execute(f'CREATE IF NOT EXIST users ("id" INTEGER, "username" VARCHAR(30) UNIQUE, "password" VARCHAR(30),"email" VARCHAR(30), PRIMARY KEY("id" AUTOINCREMENT))')
 
 con.commit()
